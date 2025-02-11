@@ -14,14 +14,10 @@ class Employee:
     def info(employee):
         print(f"{employee.name} is {employee.age} years old. Employee is a {employee.position} with the salary of ${employee.salary}.")
 
+    def __str__(self): # turn the object into a string
+        return (f"{self.name} is {self.age} years old. Employee is a {self.position} with the salary of ${self.salary}.")
 
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
 employee2 = Employee("Lauren", 44, "tester", 1000)
 
-Employee.increase_salary(employee2, 20) # Using the dictionary to manage attributes
-Employee.info(employee2)
-
-# employee2.increase_salary(20)
-# employee2.info()
-
-print(employee1)
+print(employee)
