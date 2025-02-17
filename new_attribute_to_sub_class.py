@@ -21,11 +21,10 @@ class Developer(Employee):
         super().increase_salary(percent)     # Employee.increase_salary(self, percent); can't use self, for the child class looping itself
         self.salary += bonus
 
-employee1 = Tester("Lauren", 44, 1000)
+employee1 = Tester("Lauren", 44, 1000, "Flask")
 employee2 = Developer("Ji-Soo", 38, 1000)
 
 employee1.increase_salary(20)      # increase_salary() inherited from super class
 employee2.increase_salary(20, 30)  # increase_salary)() inherited from sub class
 
-print(employee1.salary)
-print(employee2.salary)
+print(employee1.framework)
