@@ -24,4 +24,4 @@ Employee.info(employee2)
 # employee2.increase_salary(20)
 # employee2.info()
 
-print(employee1)
+print

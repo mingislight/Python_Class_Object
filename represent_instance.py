@@ -1,5 +1,3 @@
-# Validate Attribute values - Minimum Wages 1000
-
 class Employee:
     def __init__(self, name, age, position, salary):
         self.name = name
@@ -16,16 +14,8 @@ class Employee:
     def __repr__(self): # Define the repr() method
         return f"Employee({self.name}, {self.age}, {self.position}, {self.salary})"
         
-    def get_salary(self):
-        return self.salary
-    
-    def set_salary(self, salary):
-        if salary < 1000:
-            raise ValueError('Value Minimum is $1000.')
-        self.salary = salary
 
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
 employee2 = Employee("Lauren", 44, "tester", 1000)
-
-employee1.set_salary(900)
-print(employee1.get_salary())
+print(str(employee1))
+print(repr(employee1))

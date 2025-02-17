@@ -5,7 +5,7 @@ class Employee:
         self.name = name
         self.age = age
         self.position = position
-        self.salary = salary
+        self.set_salary(salary)
 
     def increse_salary(self, percent):
         self.salary += self.salary * (percent/100)
@@ -17,6 +17,8 @@ class Employee:
         return f"Employee({self.name}, {self.age}, {self.position}, {self.salary})"
         
     def get_salary(self):
+        # return f"${self.salary}"
+        # return f"${self.salary, 2}"  - decimal 2 
         return self.salary
     
     def set_salary(self, salary):
