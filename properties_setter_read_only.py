@@ -9,11 +9,11 @@ class Employee:
 
     @property  # Getter for salary
     def salary(self):
-        raise AttributeError("Salary is write-only.")
+        return self._salary
 
     @salary.setter  # Setter for salary
     def salary(self, value):
-        self._salary = value
+        raise AttributeError("Salary is read-only.")
 
     def increase_salary(self, percent):
         self.salary += self.salary * (percent / 100)

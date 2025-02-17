@@ -1,4 +1,4 @@
-# Setter for Read-Only and Write-Only
+# Setter for Write-Only
 
 class Employee:
     def __init__(self, name, age, position, salary):
@@ -32,4 +32,4 @@ employee2 = Employee("Lauren", 44, "tester", 1000)
 employee1.salary = 2000
 
 # Print salary
-print(employee1.salary)
+print(employee1._salary)  # Stored Encripted Salary Mount
